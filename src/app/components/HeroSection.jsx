@@ -37,7 +37,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            "Security is not a one-time event. It's an ongoing process".
+            &quot;Security is not a one-time event. It&apos;s an ongoing process&quot;.
           </p>
           <div>
             <Link

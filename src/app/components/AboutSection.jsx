@@ -54,7 +54,14 @@ function CertificationsList({ openModal }) {
   return (
     <ul className="list-none pl-2 flex flex-col gap-4">
       <li className="flex items-center gap-4">
-        <Image src="/images/projects/kalai.png" alt="Cisco Networking Academy" width={80} height={80} />
+        <Image
+          src="/images/projects/kalai.png"
+          alt="Cisco Networking Academy"
+          width={80}
+          height={80}
+          className="cursor-pointer"
+          onClick={() => openModal("/images/projects/kalai.png", "Cisco Networking Academy")}
+        />
         <span>Cisco Networking Academy</span>
       </li>
       <li className="flex items-center gap-4">
@@ -94,7 +101,19 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.jpeg" width={500} height={500} />
+        <div className="flex flex-col items-start">
+          <div className="relative mt-4 ml-4">
+            <Image
+              src="/images/hero-image.jpeg"
+              width={200}
+              height={200}
+              alt="Kalaiyarasan B"
+              className="border-4 border-purple-500 shadow-lg"
+              style={{ objectFit: 'cover' }}
+            />
+            <div className="absolute inset-0 border-4 border-blue-400 opacity-75 animate-pulse"></div>
+          </div>
+        </div>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
